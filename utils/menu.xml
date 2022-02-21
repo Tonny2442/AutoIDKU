@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Settings component="StartMenu" version="4.4.142">
+<Settings component="StartMenu" version="4.4.160">
 	<MenuStyle value="Classic1"/>
 	<ShiftClick value="ClassicMenu"/>
 	<ShiftWin value="ClassicMenu"/>
@@ -15,12 +15,13 @@
 	<ShowAppsMenu value="0"/>
 	<Help value="0"/>
 	<AllProgramsMetro value="0"/>
-	<RecentPrograms value="Frequent"/>
+	<RecentPrograms value="None"/>
 	<RecentMetroApps value="0"/>
 	<MaxRecentPrograms value="17"/>
 	<MaxJumplists value="17"/>
 	<StartScreenShortcut value="0"/>
 	<HighlightNewApps value="0"/>
+	<SearchBox value="Hide"/>
 	<SearchMetroApps value="0"/>
 	<SearchInternet value="0"/>
 	<MainMenuAnimation value="Slide"/>
