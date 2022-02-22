@@ -6,7 +6,7 @@ A script which automatically configures your Windows install to be an IDKU.
 
 | OS Version | Supported? |
 | ---------- | ---------- |
-| 1507       | Barely     |
+| 1507       | Working    |
 | 1511       | Working    |
 | 1607       | Working    |
 | 1703       | Working    |
