@@ -173,7 +173,9 @@ function Get-PSWURequired {
 
     if ($osBuild -NotIn $supportedPSWUs) {
         if ($uptoDate -eq $false) {
-            Get-Error -Position $scriptProgs["Init"] -ErrorText "Your OS is not up to date, and does not support PSWU. Please update to the latest build of your OS, which would be $osName build" $latestUBR[[int]$osBuild]"."
+            $intBuild = [int]$osBuild
+            $updateUBR = $latestUBR[$intBuild]
+            Get-Error -Position $scriptProgs["Init"] -ErrorText "Your OS is not up to date, and does not support PSWU. Please update to the latest build of your OS, which would be $osName build $updateUBR."
         }
     } elseif ($osBuild -In $supportedPSWUs) {
         if ($uptoDate -eq $false) {
