@@ -1,38 +1,4 @@
-﻿##[Ps1 To Exe]
-##
-##Kd3HDZOFADWE8uO1
-##Nc3NCtDXTlGDjofG5iZk2UfhT20/UuGUuqOqwY+o7NbPtCHQR51UfVx+mC7lF3eUfdkndOABu+0+WRlqHP0e8LHVJ/K9TK4ZrsJWT867674mElWW6pD7sw==
-##Kd3HFJGZHWLWoLaVvnQnhQ==
-##LM/RF4eFHHGZ7/K1
-##K8rLFtDXTiS5
-##OsHQCZGeTiiZ4NI=
-##OcrLFtDXTiS5
-##LM/BD5WYTiiZ4tI=
-##McvWDJ+OTiiZ4tI=
-##OMvOC56PFnzN8u+VslQ=
-##M9jHFoeYB2Hc8u+VslQ=
-##PdrWFpmIG2HcofKIo2QX
-##OMfRFJyLFzWE8uK1
-##KsfMAp/KUzWI0g==
-##OsfOAYaPHGbQvbyVvnQnqxygEgg=
-##LNzNAIWJGmPcoKHc7Do3uAuO
-##LNzNAIWJGnvYv7eVvnRW8F/ha0wAW6U=
-##M9zLA5mED3nfu77Q7TV64AuzAgg=
-##NcDWAYKED3nfu77Q7TV64AuzAgg=
-##OMvRB4KDHmHQvbyVvnRW8F/hT2k/Z8aatbq+hIKz8fzpqTHKCa0dR1B4gTq8DUWpVrITW7U8kPokG30=
-##P8HPFJGEFzWE8tI=
-##KNzDAJWHD2fS8u+Vgw==
-##P8HSHYKDCX3N8u+VwDtz4E+uQHFrXffV2Q==
-##LNzLEpGeC3fMu77Ro2k3hQ==
-##L97HB5mLAnfMu77Ro2k3hQ==
-##P8HPCZWEGmaZ7/K1
-##L8/UAdDXTlGDjofG5iZk2UfhT20/UuGUuqOqwY+o7NbPtCHQR51UfVx+mC7lF3eUfdkndOABu+0jUBs4KuED3rDZFduIULYFu8dUXqWY9vx/WwqW5ovxsw==
-##Kc/BRM3KXxU=
-##
-##
-##fd6a9f26a06ea3bc99616d4851b372ba
-
-#region ###################### BEGIN                        ######################
+﻿#region ###################### BEGIN                        ######################
 $root = "$PSScriptRoot\.."
 
 # Start Transcript
