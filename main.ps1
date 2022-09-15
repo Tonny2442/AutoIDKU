@@ -173,7 +173,7 @@ function Get-PSWURequired {
 
     if ($osBuild -NotIn $supportedPSWUs) {
         if ($uptoDate -eq $false) {
-            Get-Error -Position $scriptProgs["Init"] -ErrorText "Your OS is not up to date, and does not support PSWU. Please update to the latest build of your OS, which would be $osName build $fullBuild."
+            Get-Error -Position $scriptProgs["Init"] -ErrorText "Your OS is not up to date, and does not support PSWU. Please update to the latest build of your OS, which would be $osName build $latestUBR[$osBuild]."
         }
     } elseif ($osBuild -In $supportedPSWUs) {
         if ($uptoDate -eq $false) {
@@ -309,10 +309,6 @@ $osVersion =            if ($osBuild -ge 19042) {
 }
 $osName =               (Get-WmiObject Win32_OperatingSystem).Caption
 $batteryPresent =       if ($null -eq (Get-WmiObject Win32_Battery)) {$false} else {$true}
-$systemManufacturer =   (Get-WmiObject Win32_ComputerSystem).Manufacturer
-$systemModel =          (Get-WmiObject Win32_ComputerSystem).Model
-$systemCPU =            (Get-WmiObject Win32_Processor).Name
-$systemRAM =            [Math]::Ceiling((Get-WmiObject Win32_OperatingSystem).TotalVisibleMemorySize / 1mb)
 
 # Latest Build UBRs
 $latestUBR = @{
@@ -338,19 +334,6 @@ $scriptProgs = [ordered]@{
     "PreConf" = "Pre-Configuration"
     "Operate" = "Script Operation"
     "Validate" = "Validating Settings"
-}
-
-# Format System Inventory
-$sysInventory = [ordered]@{
-    "OS Name" =                 $osName
-    "OS Full Build" =           $fullBuild
-    "OS Version" =              $osVersion
-    "  " = " "
-    "Battery Installed" =       $batteryPresent
-    "System Manufacturer" =     $systemManufacturer
-    "System Model" =            $systemModel
-    "CPU Model" =               $systemCPU
-    "Total System RAM" =        "$systemRAM GB"
 }
 
 # Supported Builds
@@ -385,7 +368,7 @@ if ($fullBuild -In $latestUBR) {
 }
 
 # Set TLS Settings
-Set-TLSSettings
+#Set-TLSSettings
 
 # Check of PSWU is needed
 Get-PSWURequired
