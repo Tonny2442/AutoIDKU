@@ -38,6 +38,9 @@ $root = "$PSScriptRoot\.."
 # Start Transcript
 $date = Get-Date -Format "yyyy-MM-dd-H-mm-ss-LOG"
 Start-Transcript -Path "C:\AutoIDKU-$date.txt"
+
+# Enable Script Execution
+Set-ExecutionPolicy Unrestricted -Force
 #endregion
 
 #region ###################### FUNCTIONS                    ######################
